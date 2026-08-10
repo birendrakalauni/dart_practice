@@ -36,9 +36,13 @@ bool hasPassed(double average) {
 void main() {
   List<int> marks = [80, 77, 90, 85, 70];
 
-  print("--------------------------");
+  print("================================");
+  print("Student Report");
+  print("================================");
+  print("");
 
   studentName("Rakesh Saud");
+  print("Marks : $marks");
 
   int total = calculateTotal(marks);
   print("Total: $total");
