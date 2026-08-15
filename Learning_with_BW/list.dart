@@ -2,7 +2,7 @@ void main() {
   // List<int> rollNum = [1, 2, 3, 4, 5];
 
   List<int> rollNum = [1, 2, 3, 4, 4];
-  Set<int> rollSet = rollNum.toSet(); //Best use case
+  // Set<int> rollSet = rollNum.toSet(); //Best use case
   print("Roll Num. is $rollNum ");
   rollNum.add(7);
   print("New rollNo is added $rollNum");
@@ -27,5 +27,6 @@ void main() {
 
   // If we need unique set of data then use set
   // Set roll = {1, 2, 3, 4, 8};
+  Set<int> rollSet = rollNum.toSet();
   print("Roll Numbers: $rollSet");
 }
