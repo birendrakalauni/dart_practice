@@ -9,7 +9,7 @@ void main() {
   print("Addition: ${a + b}");
   print("Subtract: ${a - b}");
   print("Multiplication: ${a * b}");
-  print("Dividion: ${a / b}");
+  print("Division: ${a / b}");
   print("Modulus: ${a % b}");
   print("");
 
