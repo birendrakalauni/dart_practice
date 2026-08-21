@@ -11,7 +11,7 @@ class Student {
 class Car {
   String name = "AnyType"; //field
 
-  void start() {} //method
+  void start() {} //method 
 }
 
 void main() {
@@ -25,7 +25,7 @@ void main() {
   st2.display("Hari", 2);
   print("");
 
-  Car byd = Car();
+  Car byd = Car(); //Default constructor
   byd.start();
   byd.name;
 
