@@ -21,3 +21,14 @@ class User {
       name = json["name"],
       email = json["email"];
 }
+
+void main() {
+  Map<String, dynamic> data = {
+    "id": 1,
+    "name": "Birendra",
+    "email": "birendra@example.com",
+  };
+
+  User user = User.fromJson(data);
+  print(user.name);
+}
