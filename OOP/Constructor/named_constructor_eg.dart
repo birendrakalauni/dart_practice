@@ -6,9 +6,9 @@ class User {
   User(this.name, this.age);
 
   // Named Constructor
-  User.guest()
-      : name = "Guest",
-        age = 0;
+  User.guest() : name = "Guest", age = 0;
+
+  User.fromData(this.name, this.age); // Named Constructor with Parameters
 }
 
 void main() {
@@ -27,4 +27,9 @@ void main() {
   print("Guest User Details...");
   print("Name: ${guestUser.name}");
   print("Age: ${guestUser.age}");
+
+  User fromData = User.fromData("Dipak", 23);
+  print("User Details from Data..");
+  print("Name: ${fromData.name}");
+  print("Age: ${fromData.age}");
 }
