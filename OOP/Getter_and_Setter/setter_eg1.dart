@@ -20,3 +20,4 @@ void main() {
   // st1.marks = 150; // this produces an exception
   print(st1.marks);
 }
+ 
