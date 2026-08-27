@@ -1,7 +1,5 @@
 // Professional Bank Account Design
 
-import 'dart:ffi';
-
 class BankAccount {
   double _balance = 0;
 
