@@ -39,3 +39,9 @@ void main() {
   }
   print("Total Balance: Rs. ${ac1.balance}");
 }
+
+/** This is often better encapsulation than:
+
+set balance(...)
+
+because the domain rules are expressed as meaningful operations. */
