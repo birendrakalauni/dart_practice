@@ -6,6 +6,7 @@ class Animal {
 
 class Dog extends Animal {
   void sound() {
+    super.sound();
     print("Dog says Woof.");
   }
 }
