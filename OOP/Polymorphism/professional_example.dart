@@ -34,19 +34,25 @@ class UserController {
   }
 }
 
-void main() {
-  const email = "birendra@gmail.com";
-  const password = "123456";
+  Future<void> main() async {
+    const email = "birendra@gmail.com";
+    const password = "123456";
 
-  print("====== API LOGIN ======");
+    print("====== API LOGIN ======");
 
-  UserRepository apiRepository = ApiUserRepository();
+    UserRepository apiRepository = ApiUserRepository();
 
-  final apiController = UserController(apiRepository);
+    final apiController = UserController(apiRepository);
 
-  await apiController.login(email, password);
+    await apiController.login(email, password);
 
-  print("");
+    print("");
 
-  
-}
+    print("====== FIREBASE LOGIN ======");
+
+    UserRepository firebaseRepository = FirebaseUserRepository();
+
+    final firebaseController = UserController(firebaseRepository);
+
+    await firebaseController.login(email, password);
+  }
